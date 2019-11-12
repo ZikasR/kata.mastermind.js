@@ -1,0 +1,24 @@
+{
+  "name": "mastermind_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mastermind",
+    "game",
+    "board game"
+  ],
+  "author": "Zakaria RAHIOUI",
+  "license": "ISC"
+}
