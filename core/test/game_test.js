@@ -4,7 +4,7 @@ const game = require('../game');
 
 describe('MasterMind', () => {
   describe('getRandomElementOfArray', () => {
-    it('should return the only element of the array of it has one element.', () => {
+    it('should return the only element of the array if it has one element.', () => {
       const element = 'Banana';
       const array = Array(element);
       assert.strictEqual(game.getRandomElementOfArray(array), element);
@@ -98,7 +98,7 @@ describe('MasterMind', () => {
       assert.strictEqual(feedback.filter((element) => element === 'BLACK').length, 2);
     });
 
-    it('should return 2 black key pegs, 1 white key peg and 1 empty peg, when 2 code pegs exist but in the right place, 1 exist but in the wrong place and 1 doesn\'t exist', () => {
+    it('should return 2 black key pegs, 1 white key peg and 1 empty peg, when 2 code pegs exist in the right place, 1 exist but in the wrong place and 1 doesn\'t exist', () => {
       const guess = ['RED', 'BLACK', 'BLACK', 'BLUE'];
       const pattern = ['RED', 'BLUE', 'BLACK', 'YELLOW'];
 

@@ -1,6 +1,7 @@
 // const codePegs = ['RED', 'BLACK', 'WHITE', 'YELLOW', 'GREEN', 'BLUE'];
 
 const getRandomElementOfArray = (array) => array[Math.floor(Math.random() * array.length)];
+
 const createPattern = (codePegs) => {
   const pattern = new Array(4).fill(null);
   return pattern.map(() => getRandomElementOfArray(codePegs));
@@ -27,5 +28,7 @@ const getFeedback = (guess, pattern) => {
 
   return shuffle(feedback);
 };
+
+// TODO: use redux ?
 
 module.exports = { getRandomElementOfArray, createPattern, getFeedback };

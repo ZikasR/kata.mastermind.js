@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "game.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -12,7 +14,8 @@
     "nyc": "^14.1.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./**/test/*.js -w",
+    "http": "node ./http/index.js"
   },
   "keywords": [
     "mastermind",
